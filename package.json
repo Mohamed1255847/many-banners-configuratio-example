@@ -1,0 +1,21 @@
+{
+  "name": "many-banners",
+  "version": "1.0.0",
+  "description": "A simple Node.js application with Express.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "install:packages": "yarn install",
+    "dev:normal": "yarn install:packages && yarn workspace @genralapp/normal-banner dev",
+    "dev:midlife": "yarn install:packages && yarn workspace @genralapp/midlife-banner dev"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^3.1.0"
+  },
+  "keywords": [],
+  "author": "mohamed saadawy",
+  "license": "ISC"
+}
